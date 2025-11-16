@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShrimpNest — Coming Soon</title>
+  <meta name="description" content="ShrimpNest — premium Red Cherry shrimp breeders. Launching soon. Join our waitlist!" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0f172a; /* dark navy */
+      --bg2:#071024; /* darker */
+      --accent:#ff3b6b; /* coral/ruby */
+      --accent-2:#ff8aa1;
+      --muted:rgba(255,255,255,0.7);
+      --card: rgba(255,255,255,0.03);
+      --glass: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial; 
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(255,59,107,0.06), transparent),
+                  linear-gradient(180deg,var(--bg1),var(--bg2));
+      color: #fff; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      display:flex;align-items:center;justify-content:center;padding:40px;
+    }
+    .wrap{width:100%;max-width:980px;background:var(--card);border-radius:18px;padding:36px;box-shadow:0 10px 40px rgba(2,6,23,0.6);backdrop-filter: blur(6px);}
+    .grid{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.right{order:2}}
+
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(255,59,107,0.15)}
+    .logo h1{font-size:18px;margin:0;letter-spacing:0.2px}
+    .hero-title{font-weight:800;font-size:44px;line-height:1; margin:12px 0 6px}
+    @media (max-width:460px){.hero-title{font-size:32px}}
+    .lead{color:var(--muted);margin-bottom:20px}
+
+    .stats{display:flex;gap:12px;margin-top:18px}
+    .stat{background:var(--glass);padding:12px;border-radius:10px;text-align:center;min-width:84px}
+    .stat b{display:block;font-size:20px}
+    .stat p{margin:4px 0 0;color:var(--muted);font-size:13px}
+
+    /* right column */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:12px}
+    .countdown{display:flex;gap:10px;justify-content:space-between}
+    .countdown .box{flex:1;padding:12px;border-radius:8px;background:rgba(0,0,0,0.2);text-align:center}
+    .box .num{font-weight:800;font-size:22px}
+    .box .lbl{font-size:12px;color:var(--muted);margin-top:6px}
+
+    form{margin-top:16px;display:flex;gap:8px}
+    input[type=email]{flex:1;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+    button{padding:12px 16px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;font-weight:700;cursor:pointer}
+    .success{margin-top:12px;color:#b7ffda;background:rgba(0,0,0,0.15);padding:10px;border-radius:8px;font-weight:600}
+    .foot{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:12px}
+    .social{display:flex;gap:10px}
+    .social a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.02)}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* shrimp illustration */
+    .art{display:flex;align-items:center;justify-content:center}
+    .art svg{width:100%;max-width:360px}
+
+    /* utility */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="logo">
+          <div class="mark" aria-hidden>
+            <!-- simple shrimp icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 12c0 4.418 3.582 8 8 8s8-3.582 8-8" stroke="#fff" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="9.5" cy="11.2" r="1.4" fill="#fff" opacity="0.95"/>
+            </svg>
+          </div>
+          <div>
+            <h1>ShrimpNest</h1>
+            <div class="small">Premium Red Cherry breeders</div>
+          </div>
+        </div>
+
+        <h2 class="hero-title">We’re hatching something special 🦐</h2>
+        <p class="lead">ShrimpNest is preparing a boutique line of healthy, vibrant Red Cherry shrimps — sustainably bred and ready for aquarists and small retailers. Join our waitlist and be first to receive stock updates and early-bird offers.</p>
+
+        <div class="stats" aria-hidden>
+          <div class="stat"><b>20+</b><p>Breeding Lines</p></div>
+          <div class="stat"><b>500+</b><p>Planned Stock</p></div>
+          <div class="stat"><b>100%</b><p>Quarantine Checked</p></div>
+        </div>
+
+        <div style="margin-top:20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+          <a href="#contact" style="text-decoration:none"><button style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:10px 14px;border-radius:10px">Contact Us</button></a>
+          <a href="#" style="text-decoration:none"><button style="display:inline-flex;align-items:center;gap:8px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20M2 12h20" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Learn More</button></a>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div class="muted">Launching on</div>
+              <div style="font-weight:800;font-size:18px">January 1, 2026</div>
+            </div>
+            <div style="text-align:right">
+              <div class="muted">Notify me</div>
+              <div style="font-weight:800">Join waitlist</div>
+            </div>
+          </div>
+
+          <div style="margin-top:14px" class="countdown" aria-live="polite">
+            <div class="box"><div class="num" id="days">--</div><div class="lbl">Days</div></div>
+            <div class="box"><div class="num" id="hours">--</div><div class="lbl">Hours</div></div>
+            <div class="box"><div class="num" id="minutes">--</div><div class="lbl">Minutes</div></div>
+            <div class="box"><div class="num" id="seconds">--</div><div class="lbl">Seconds</div></div>
+          </div>
+
+          <form id="waitlist" onsubmit="return handleSubmit(event)">
+            <input type="email" id="email" placeholder="Your email address" required aria-label="Email address" />
+            <button type="submit">Notify Me</button>
+          </form>
+          <div id="msg" style="display:none" class="success">Thanks — you're on the list! We'll email you updates.</div>
+
+          <div class="foot">
+            <div class="small">Questions? <a id="contact" href="mailto:info@shrimpnest.example" style="color:inherit;text-decoration:underline">info@shrimpnest.example</a></div>
+            <div class="social">
+              <a href="#" title="Instagram" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-opacity="0.9" stroke-width="1.2"/><circle cx="12" cy="12" r="3" stroke="#fff" stroke-opacity="0.9" stroke-width="1.2"/><circle cx="17.5" cy="6.5" r="0.6" fill="#fff" opacity="0.95"/></svg></a>
+              <a href="#" title="Facebook" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" stroke="#fff" stroke-opacity="0.9" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;text-align:center" class="art">
+          <!-- decorative shrimp vector -->
+          <svg viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <g fill="none" stroke="url(#g)" stroke-width="6">
+              <defs>
+                <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#ff3b6b"/>
+                  <stop offset="100%" stop-color="#ff8aa1"/>
+                </linearGradient>
+              </defs>
+              <path d="M50 260c40-60 120-90 200-80 80 10 140 70 220 80 50 7 80-15 110-35" stroke-linecap="round"/>
+              <path d="M520 180c-8-16-20-30-36-40-34-22-72-6-104 8" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:18px;text-align:center;color:var(--muted);font-size:13px">© <span id="year"></span> ShrimpNest — All rights reserved</div>
+  </div>
+
+  <script>
+    // -- CONFIG: change this launch date to your real launch --
+    const launchDate = new Date('2026-01-01T00:00:00');
+
+    function updateCountdown(){
+      const now = new Date();
+      let diff = Math.max(0, launchDate - now);
+      const days = Math.floor(diff / (1000*60*60*24));
+      diff -= days*(1000*60*60*24);
+      const hours = Math.floor(diff/(1000*60*60));
+      diff -= hours*(1000*60*60);
+      const minutes = Math.floor(diff/(1000*60));
+      diff -= minutes*(1000*60);
+      const seconds = Math.floor(diff/1000);
+      document.getElementById('days').textContent = String(days).padStart(2,'0');
+      document.getElementById('hours').textContent = String(hours).padStart(2,'0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2,'0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2,'0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown,1000);
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // simple waitlist (localStorage). Replace with API call when ready.
+    function handleSubmit(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      if(!email) return;
+      // basic email validation
+      const valid = /\S+@\S+\.\S+/.test(email);
+      if(!valid){ alert('Please enter a valid email'); return; }
+      // store locally (demo). You can replace with fetch() to your server.
+      const list = JSON.parse(localStorage.getItem('shrimp_waitlist')||'[]');
+      if(!list.includes(email)){
+        list.push(email);
+        localStorage.setItem('shrimp_waitlist', JSON.stringify(list));
+      }
+      document.getElementById('msg').style.display = 'block';
+      document.getElementById('waitlist').reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
